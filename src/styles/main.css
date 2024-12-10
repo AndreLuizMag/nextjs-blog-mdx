@@ -1,0 +1,78 @@
+@import "./reset.css";
+
+:root {
+	--background-primary: hsl(0, 0%, 0%);
+	--background-secondary: hsl(0, 0%, 4%);
+
+	--color-primary: hsl(0, 0%, 93%);
+	--color-secondary: hsl(0, 0%, 63%);
+
+	--border: hsl(0, 0%, 15%);
+	--border-selected: hsl(0, 0%, 27%);
+}
+
+body {
+	font-family: var(--font-geist-sans);
+	background-color: var(--background-primary);
+	color: var(--color-secondary);
+	line-height: 140%;
+}
+
+.main-mdx {
+	padding-block: 1rem 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-primary);
+	line-height: 100%;
+}
+
+a {
+	color: var(--color-primary);
+	text-decoration: none;
+	line-height: 100%;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.btn {
+	padding: .75rem 1rem;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	cursor: pointer;
+	font-weight: 600;
+	text-decoration: none;
+	border-radius: 0.5rem;
+	transition-property: border, background-color;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+	background-color: var(--color-primary);
+	color: var(--background-secondary);
+	border: none;
+
+	&:hover {
+		text-decoration: none;
+		background-color: hsl(0, 0%, 80%);
+	}
+
+	&.outline {
+		--_border-color: var(--border);
+		color: var(--color-primary);
+		border: 1px solid var(--_border-color);
+		background-color: var(--background-secondary);
+
+		&:hover {
+			--_border-color: var(--border-selected);
+		}
+	}
+}
