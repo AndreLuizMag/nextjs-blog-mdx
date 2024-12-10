@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ViewTransitions } from 'next-view-transitions';
 import '@/styles/main.css';
+import { Analytics } from '@vercel/analytics/react';
 import { GeistMono } from 'geist/font/mono';
 import { GeistSans } from 'geist/font/sans';
 import type { ReactNode } from 'react';
@@ -20,6 +21,7 @@ const RootLayout = ({
 			<html lang="en">
 				<body className={`${GeistSans.variable} ${GeistMono.variable}`}>
 					{children}
+					<Analytics />
 				</body>
 			</html>
 		</ViewTransitions>
