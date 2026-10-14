@@ -1,9 +1,9 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import { Container } from '@/components/Container';
 import { ListPost } from '@/components/ListPost';
 import type { Posts } from '@/types/posts';
 import { posts } from '@/utils/posts';
-import Image from 'next/image';
-import Link from 'next/link';
 
 const Home = () => {
 	return (

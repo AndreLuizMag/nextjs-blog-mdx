@@ -1,6 +1,5 @@
 'use client';
 import { useRouter } from 'next/navigation';
-import React from 'react';
 import './styles.css';
 import Link from 'next/link';
 

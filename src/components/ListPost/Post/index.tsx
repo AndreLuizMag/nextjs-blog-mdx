@@ -1,5 +1,4 @@
 import { Link } from 'next-view-transitions';
-import React from 'react';
 import './styles.css';
 
 type PostProps = {

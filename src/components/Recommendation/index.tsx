@@ -1,16 +1,14 @@
 'use client';
-import React from 'react';
 import './styles.css';
+import { usePathname } from 'next/navigation';
 import { ListPost } from '@/components/ListPost';
 import { usePost } from '@/hooks/useSearchSlug';
-import { posts } from '@/utils/posts';
-import { usePathname } from 'next/navigation';
 
 export const Recommendation = () => {
 	const pathname = usePathname();
 	const slug = pathname.split('/').pop();
 
-	const { post, recommendations } = usePost(slug);
+	const { recommendations } = usePost(slug);
 
 	return (
 		<div className="recommendation">

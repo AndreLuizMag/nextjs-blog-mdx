@@ -1,6 +1,6 @@
+import { useMemo } from 'react';
 import type { Posts } from '@/types/posts';
 import { posts } from '@/utils/posts';
-import { useMemo } from 'react';
 
 export const usePost = (slug?: string) => {
 	const post = useMemo(() => {

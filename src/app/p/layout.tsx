@@ -1,7 +1,7 @@
+import type { ReactNode } from 'react';
 import { Container } from '@/components/Container';
 import { Navbar } from '@/components/Navbar';
 import { Recommendation } from '@/components/Recommendation';
-import React, { type ReactNode } from 'react';
 
 const MDXLayout = ({
 	children,
